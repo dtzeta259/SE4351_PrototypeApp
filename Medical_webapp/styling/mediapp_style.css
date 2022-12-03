@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*todo- Figure out what each section will affect what in the login page.*/
+/*todo- Make a short account list with important data in separate file*/
+/*todo- Make sure accounts can be validated by web app, since we are not adding database*/
+/*todo- Make sure the links to the respective webpages function*/
+/*todo- Find way to create a mobile application (Apple or Android?)*/
+
+/*styling for title and login*/
+.login_title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.title_text{
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-color: #ddefff;
+    border-radius: 10px;
+    width: 30%;
+    height: 10%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    transform: translate(120%, 80%);
+}
+
+.loginbox{
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #c2e2fe;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.loginbox input[type="text"], .loginbox input[type="password"]{
+
+    border: 0;
+    background: white;
+    border: gray;
+    display: block;
+    margin: 20px auto;
+    text-align: left;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: black;
+    border-radius: 10px;
+    transition: 0.25px;
+}
+
+.loginbox input[type="text"]:focus, .loginbox input[type="password"]:focus{
+    width: 270px;
+    color: black;
+}
+
+.loginbox input[type="submit"]{
+
+    border: 0;
+    background: #50A1EB;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 35px;
+    width: 220px;
+    outline: none;
+    color: black;
+    border-radius: 10px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+
+.loginbox input[type="submit"]:hover{
+    background: #7ec0ff;
+}
+
+.register_link{
+    width: 400px;
+    font-size: 20px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,170%);
+    text-align: center;
+}
+
+/*Styling for the Home Page*/
+.sidebar-heading.border-bottom.bg-light{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*Styling for Register Page*/
+
+.mb-3{
+    font-weight: bold;
+    padding: 2px;
+    width: 500px;
+}
+
+.col-md-7.col-lg-8{
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+}
+
+.w-100.btn.btn-primary.btn-lg{
+    margin-top: 15px;
+    font-weight: bold;
+}
+/*Styling for Map Page*/
+
+/*Styling for Billing Page*/
+.invoice-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.invoice-box table {
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+}
+
+.invoice-box table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.invoice-box table tr td:nth-child(2) {
+    text-align: right;
+}
+
+.invoice-box table tr.top table td {
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.top table td.title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #333;
+}
+
+.invoice-box table tr.information table td {
+    padding-bottom: 40px;
+}
+
+.invoice-box table tr.heading td {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.invoice-box table tr.details td {
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.item td {
+    border-bottom: 1px solid #eee;
+}
+
+.invoice-box table tr.item.last td {
+    border-bottom: none;
+}
+
+.invoice-box table tr.total td:nth-child(2) {
+    border-top: 2px solid #eee;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .invoice-box table tr.top table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .invoice-box table tr.information table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
+/** RTL **/
+.invoice-box.rtl {
+    direction: rtl;
+    font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+}
+
+.invoice-box.rtl table {
+    text-align: right;
+}
+
+.invoice-box.rtl table tr td:nth-child(2) {
+    text-align: left;
+}
+
+/*Styling for Profile Page*/
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #50A1EB;
+}
+
+.profile-button {
+    background: #50A1EB;
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #7ec0ff;
+}
+
+.profile-button:focus {
+    background: #7ec0ff;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #7ec0ff;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #7ec0ff;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #7ec0ff;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #7ec0ff;
+}
+
+/*Styling for calendar*/
+
+.calendar_Top{
+    color: black;
+    font-weight: bold;
+}
+.clearfix::after,
+.calendar ol::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* ================
+Calendar Styling */
+.calendar {
+  border-radius: 10px;
+}
+
+.month {
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  .month {
+    font-size: 3.5rem;
+  }
+}
+
+.calendar ol li {
+  float: left;
+  width: 14.28571%;
+}
+
+.calendar .day-names {
+  border-bottom: 1px solid #eee;
+}
+
+.calendar .day-names li {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.calendar .days li {
+  border-bottom: 1px solid #eee;
+  min-height: 8rem;
+}
+
+.calendar .days li .date {
+  margin: 0.5rem 0;
+}
+
+.calendar .days li .event {
+  font-size: 0.75rem;
+  padding: 0.4rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4rem;
+  margin-bottom: 1px;
+}
+
+.calendar .days li .event.span-2 {
+  width: 200%;
+}
+
+.calendar .days li .event.begin {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.calendar .days li .event.end {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.calendar .days li .event.clear {
+  background: none;
+}
+
+.calendar .days li:nth-child(n+29) {
+  border-bottom: none;
+}
+
+.calendar .days li.outside .date {
+  color: #ddd;
+}
